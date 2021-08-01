@@ -1,0 +1,32 @@
+package tipoConta;
+
+public  class Conta {
+
+	public int numero;
+	public boolean agencia;
+	public String cliente;
+	public Double saldo;
+
+	public Conta(int numero, int agencia, String cliente, Double saldo) {
+		super();
+		this.numero = numero;
+		this.agencia = agencia > 0;
+		this.cliente = cliente;
+		this.saldo = saldo = (double) 0;
+	}
+	// metodo sacar dinheiro
+	public void sacar(double valor) {
+		if (saldo >= valor && saldo <= 0) {
+			saldo -= valor;
+		}else {
+			System.out.println("\"Saldo insuficiente. Faça um depósito\\n\"");
+		}
+	}
+	//metodo de desositar
+	public void depositar(double valor) {
+		saldo += valor;
+		System.out.println("Depositado: " + valor);
+		System.out.println("Novo saldo: " + saldo + "\n");
+	}
+
+}

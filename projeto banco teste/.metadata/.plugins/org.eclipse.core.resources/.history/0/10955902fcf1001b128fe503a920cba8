@@ -1,0 +1,13 @@
+package programa;
+
+import tipoConta.Conta;
+
+public class Progam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			Conta conta = new Conta();
+			System.out.println(conta.getSaldo());
+	}
+
+}

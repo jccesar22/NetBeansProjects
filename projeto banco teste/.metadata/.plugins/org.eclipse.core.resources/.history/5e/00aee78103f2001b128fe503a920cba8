@@ -1,0 +1,17 @@
+package programa;
+
+import java.util.Locale;
+
+import tipoConta.ContaCorrente;
+
+public class Progam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			Locale.setDefault(Locale.US);
+			ContaCorrente contacorente = new ContaCorrente();
+			contacorente = new ContaCorrente(1150, 2536, "jose dino", "jose dinovo", "152.1125.0.2.5")
+			contacorente.sacar(15);
+	}
+
+}

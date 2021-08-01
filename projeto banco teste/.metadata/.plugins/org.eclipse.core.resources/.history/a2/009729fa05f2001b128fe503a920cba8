@@ -1,0 +1,22 @@
+package programa;
+
+import java.util.Locale;
+
+import tipoConta.ContaCorrente;
+
+public class Progam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			Locale.setDefault(Locale.US);
+			//instciação de objeto contaCorrent
+			ContaCorrente contacorente = new ContaCorrente();
+			contacorente.cliente= "julio";
+			contacorente.cpf ="125.423.253-19";
+			contacorente.agencia = 1152;
+			contacorente.sacar(15);
+			System.out.println("----------------------------------------------");
+			
+	}
+
+}

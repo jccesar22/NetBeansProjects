@@ -1,0 +1,15 @@
+package programa;
+
+import tipoConta.Conta;
+
+public class Progam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			Conta conta = new Conta();
+			conta.depositar(15.00);
+			conta.sacar(50.00);
+			
+	}
+
+}

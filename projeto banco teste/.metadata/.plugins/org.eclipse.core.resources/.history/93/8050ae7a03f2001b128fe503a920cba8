@@ -1,0 +1,16 @@
+package programa;
+
+import java.util.Locale;
+
+import tipoConta.ContaCorrente;
+
+public class Progam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			Locale.setDefault(Locale.US);
+			ContaCorrente contacorente = new ContaCorrente();
+			contacorente.sacar(15);
+	}
+
+}

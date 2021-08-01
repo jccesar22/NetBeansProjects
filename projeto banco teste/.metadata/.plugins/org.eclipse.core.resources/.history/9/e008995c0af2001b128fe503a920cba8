@@ -1,0 +1,55 @@
+package tipoConta;
+
+public class ContaPoupanca extends Conta {
+	public String nome;
+	public String cpf;
+
+	public ContaPoupanca() {
+		super();
+	}
+
+	public ContaPoupanca(int numero, int agencia, String cliente, String nome, String cpf) {
+		super(numero, agencia, cliente);
+		this.nome = nome;
+		this.cpf = cpf;
+	}
+	
+
+	public String getNome() {
+		return nome;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	// metodo de desositar
+	@Override
+	public void depositar(double valor) {
+		this.saldo += valor;
+		System.out.println("Depositado: " + valor);
+		System.out.println("Novo saldo: " + saldo + "\n");
+	}
+
+	// metodo sacar dinheiro
+	@Override
+	public void sacar(double valor) {
+		if (saldo >= valor) {
+			saldo -= valor + 0.10;
+			System.out.println("Sacado: " + valor);
+			System.out.println("Novo saldo: " + saldo + "\n");
+		} else {
+			System.out.println("\"Saldo de :" + saldo + " menor que o valor do saque de " + valor + "\\n\"");
+			System.out.println("\"Saldo insuficiente. Faça um depósito\\n\"");
+		}
+	}
+	@Override
+	public String toString() {
+		return "Informação da conta Bancaria\n"+
+				"Conta Poupança nome: "+ cliente
+				+"\nCpf: "+ cpf
+				+"\nAgencia : "+ agencia
+				+ saldo
+				;
+	}
+}

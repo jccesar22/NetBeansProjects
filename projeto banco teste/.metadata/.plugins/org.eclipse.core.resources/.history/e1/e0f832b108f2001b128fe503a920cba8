@@ -1,0 +1,35 @@
+package programa;
+
+import java.util.Locale;
+
+import tipoConta.ContaCorrente;
+
+public class Progam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			Locale.setDefault(Locale.US);
+			//instciação de objeto contaCorrent
+			System.out.println("-----------------------Demostração da conta Corrente-----------------------");
+			ContaCorrente contacorente = new ContaCorrente();
+			contacorente.cliente= "julio";
+			contacorente.cpf ="125.423.253-19";
+			contacorente.agencia = 1152;
+			//sacando acima do saldo permitido acima de 0;
+			contacorente.sacar(15);
+			System.out.println(contacorente);
+			System.out.println("-----------------------Demostração da conta Corrent com deposito/saque-----------------------");
+			ContaCorrente contacorente2 = new ContaCorrente();
+			contacorente2.cliente= "julio";
+			contacorente2.cpf ="125.423.253-19";
+			contacorente2.agencia = 1152;
+			//depositado um valor e depois sacando
+			contacorente2.depositar(20.00);
+			contacorente2.sacar(15.00);
+			System.out.println(contacorente2);
+			System.out.println("-----------------------Demostração da conta poupança-----------------------");
+			
+
+	}
+
+}

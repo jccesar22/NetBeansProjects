@@ -1,0 +1,52 @@
+package tipoConta;
+
+public class ContaCorrente extends Conta{
+	public String cpf;
+
+	public ContaCorrente() {
+		super();
+	}
+	
+	public ContaCorrente(int numero, int agencia, String cliente, String nome, String cpf) {
+		super(numero, agencia, cliente = nome);
+		this.cpf = cpf;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	// metodo de desositar
+	@Override
+	public void depositar(double valor) {
+		System.out.println("Saldo anterior: R$" + saldo);
+		this.saldo += valor;
+		System.out.println("Depositado: " + valor);
+		System.out.println("Novo saldo: " + saldo + "\n");
+	}
+
+	// metodo sacar dinheiro
+	@Override
+	public void sacar(double valor) {
+		if (saldo >= valor) {
+			//saldo = (saldo - 0.10) - valor;
+			saldo -= valor + 0.10;
+			System.out.println("Sacado: " + valor);
+			System.out.printf("Novo saldo: %.2f \n", saldo);
+		} else {
+			System.out.println("\"Saldo de :" + saldo + " menor que o valor do saque de " + valor + "\\n\"");
+			System.out.println("\"Saldo insuficiente. Faça um depósito\\n\"");
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "Informação da conta Bancaria\n"+
+				"Conta Corrente nome: "+ cliente
+				+"\nCpf: "+ cpf
+				+"\nAgencia : "+ agencia
+				+ saldo
+				;
+	}
+	
+}
