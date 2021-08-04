@@ -21,7 +21,7 @@ public class HoraDSistema {
        
     String valor= "30";
     int idade = Integer.parseInt(valor);
-        System.out.println(idade + 0xa);
+        System.out.println(idade);
 
 }
 }
