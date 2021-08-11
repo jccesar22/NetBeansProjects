@@ -1,23 +1,8 @@
 package tipoConta;
+import tipoConta.cliente;
+public class ContaPoupanca extends Conta{
 
-public class ContaPoupanca extends Conta {
-
-	public String cpf;
-
-	public ContaPoupanca() {
-		super();
-	}
-
-	public ContaPoupanca(int numero, int agencia, String cliente, String cpf) {
-		super(numero, agencia, cliente);
 	
-		this.cpf = cpf;
-	}
-
-	public String getCpf() {
-		return cpf;
-	}
-
 	// metodo de desositar
 	@Override
 	public void depositar(double valor) {
@@ -39,14 +24,14 @@ public class ContaPoupanca extends Conta {
 				System.out.println("Este valor de saque e Invalido \n");
 			}
 		} else {
-			System.out.println("\"Saldo de :" + saldo + " menor que o valor do saque de " + valor + "\\n\"");
+			System.out.printf("Saldo de R$%.2f menor que o valor do saque de " + valor + "\n", saldo);
 			System.out.println("\"Saldo insuficiente. Fa�a um dep�sito\n");
 		}
 	}
 
 	@Override
 	public String toString() {
-		return "\nInforma��o da conta Bancaria\n" + "tipo de Conta : Conta Poupan�a \nnome: " + cliente + "\nCpf: " + cpf
+		return "\nInformacao da conta Bancaria\n" + "tipo de Conta : Conta Poupan�a \nnome: " + cliente + "\nCpf: " + cpf
 				+ "\nAgencia : " + agencia + "\nsaldo " + String.format("%.2f", saldo);
 	}
 }

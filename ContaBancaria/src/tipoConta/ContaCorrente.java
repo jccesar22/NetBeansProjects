@@ -2,21 +2,16 @@ package tipoConta;
 
 public class ContaCorrente extends Conta {
 
-	public String cpf;
+    public ContaCorrente() {
+    }
 
-	public ContaCorrente() {
-		super();
-	}
+    public ContaCorrente(int numero, String cliente, int agencia) {
+        super(numero, cliente, agencia);
+    }
 
-	public ContaCorrente(int numero, int agencia, String cliente, String nome, String cpf) {
-		super(numero, agencia, cliente = nome);
-		this.cpf = cpf;
-	}
-
-	public String getCpf() {
-		return cpf;
-	}
-
+   
+	
+        
 	// metodo de desositar
 	@Override
 	public void depositar(double valor) {
@@ -39,15 +34,20 @@ public class ContaCorrente extends Conta {
 				System.out.println("Este valor de saque e Invalido \n");
 			}
 		} else {
-			System.out.println("\"Saldo de :" + saldo + " menor que o valor do saque de " + valor + "\\n\"");
-			System.out.println("\"Saldo insuficiente. Fa�a um dep�sito\n");
+			System.out.printf("Saldo de R$%.2f menor que o valor do saque de " + valor + "\n", saldo);
+			System.out.println("Saldo insuficiente. Faca um deposito\n");
 		}
 	}
 
 	@Override
 	public String toString() {
-		return "Informa��o da conta Bancaria\n" + "tipo de Conta : Conta Corrente \nnome: " + cliente + "\nCpf: " + cpf
+		return "Informacao da conta Bancaria\n" + "tipo de Conta : Conta Corrente \nnome: " + cliente + "\nCpf: " + cpf
 				+ "\nAgencia : " + agencia + "\nsaldo da conta: R$" + String.format("%.2f", saldo);
 	}
+
+    
+        
+        
+        
 
 }
