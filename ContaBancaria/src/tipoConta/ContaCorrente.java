@@ -47,7 +47,7 @@ public class ContaCorrente extends Conta {
 
 	@Override
 	public String toString() {
-		return "Informacao da conta Bancaria\n" + "tipo de Conta : Conta Corrente \nnome: " + cliente + "\nCpf: " + cpf
+		return "Informacao da conta Bancaria\n" + "tipo de Conta : Conta Corrente \nnome: " + nome + "\nCpf: " + cpf
 				+ "\nAgencia : " + agencia + "\nsaldo da conta: R$" + String.format("%.2f", saldo);
 	}
 

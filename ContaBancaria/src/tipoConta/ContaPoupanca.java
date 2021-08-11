@@ -40,7 +40,7 @@ public class ContaPoupanca extends Conta{
 
 	@Override
 	public String toString() {
-		return "\nInformacao da conta Bancaria\n" + "tipo de Conta : Conta Poupan�a \nnome: " + cliente + "\nCpf: " + cpf
+		return "\nInformacao da conta Bancaria\n" + "tipo de Conta : Conta Poupan�a \nnome: " + nome + "\nCpf: " + cpf
 				+ "\nAgencia : " + agencia + "\nsaldo " + String.format("%.2f", saldo);
 	}
 }

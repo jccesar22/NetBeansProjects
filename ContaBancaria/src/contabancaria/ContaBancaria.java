@@ -23,7 +23,7 @@ public class ContaBancaria {
 			//demostra��o de deposito e saque e depois um deposito, a conta retira 0.10 de valor de taxa de saque
 			System.out.println("-----------------------Demostracao da conta Corrente com deposito/saque-----------------------");
 			ContaCorrente contacorente2 = new ContaCorrente();
-			contacorente2.cliente= "julio";
+			contacorente2.nome= "julio";
 			contacorente2.cpf ="125.423.253-19";
 			contacorente2.agencia = 1152;
 			//depositado um valor e depois sacando
@@ -35,7 +35,7 @@ public class ContaBancaria {
 			
 			System.out.println("-----------------------Demostracao da conta poupan�a-----------------------");
 			ContaPoupanca contaPoupanca = new ContaPoupanca();
-			contaPoupanca.cliente = "Julio C�sar soares";
+			contaPoupanca.nome = "Julio C�sar soares";
 			contaPoupanca.cpf = "114.256.452-25";
 			contaPoupanca.agencia = 2535;
 			//sacando acima do saldo permitido acima de 0;
@@ -44,7 +44,7 @@ public class ContaBancaria {
 			
 			System.out.println("-----------------------Demostra��o da conta poupanca 2-----------------------");
 			ContaPoupanca contaPoupanca2 = new ContaPoupanca();
-			contaPoupanca2.cliente = "Julio Cesar soares";
+			contaPoupanca2.nome = "Julio Cesar soares";
 			contaPoupanca2.cpf = "114.256.452-25";
 			contaPoupanca2.agencia = 2535;
 			//depositado um valor e depois sacando		
