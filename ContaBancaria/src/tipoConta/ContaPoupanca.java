@@ -1,7 +1,16 @@
 package tipoConta;
-import tipoConta.cliente;
 public class ContaPoupanca extends Conta{
 
+ 
+
+    public ContaPoupanca() {
+        super();
+    }
+
+    public ContaPoupanca(int numero, String nome, String cpf, int agencia) {
+        super(numero, nome, cpf, agencia);
+    }
+       
 	
 	// metodo de desositar
 	@Override

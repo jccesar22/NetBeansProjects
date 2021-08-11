@@ -8,15 +8,23 @@ public abstract class Conta extends cliente{
 	public String cliente;
 	public Double saldo = 0.0;
 
-    public Conta(int numero, String cliente, String nome, String cpf) {
+    public Conta(int numero, String cliente, String nome, String cpf, String agencia) {
         super(nome, cpf);
         this.numero = numero;
-        this.cliente = cliente;
+        this.cliente = nome;
     }
+    public Conta(int numero, String nome, String cpf, int agencia) {
+        super(nome, cpf);
+        this.numero = numero;
+        this.cliente = nome;
+        this.agencia = agencia;
+    }
+    
 
-  
-
-	
+    public Conta() {
+        super();
+    }
+    
 
 
 	public int getNumero() {

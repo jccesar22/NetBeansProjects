@@ -2,12 +2,18 @@ package tipoConta;
 
 public class ContaCorrente extends Conta {
 
+   
+
+   
+
     public ContaCorrente() {
+        super();
     }
 
-    public ContaCorrente(int numero, String cliente, int agencia) {
-        super(numero, cliente, agencia);
+    public ContaCorrente(int numero, String nome, String cpf, int agencia) {
+        super(numero, nome, cpf, agencia);
     }
+
 
    
 	

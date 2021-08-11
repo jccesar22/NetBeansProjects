@@ -35,7 +35,7 @@ public class ContaBancaria {
 			
 			System.out.println("-----------------------Demostracao da conta poupan�a-----------------------");
 			ContaPoupanca contaPoupanca = new ContaPoupanca();
-			contaPoupanca.cliente = "Julio Cesar soares";
+			contaPoupanca.cliente = "Julio C�sar soares";
 			contaPoupanca.cpf = "114.256.452-25";
 			contaPoupanca.agencia = 2535;
 			//sacando acima do saldo permitido acima de 0;
