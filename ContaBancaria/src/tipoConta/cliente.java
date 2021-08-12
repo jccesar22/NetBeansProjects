@@ -10,6 +10,7 @@ package tipoConta;
  * @author cesar
  */
 public class cliente {
+
     public String nome;
     public String cpf;
 
@@ -17,9 +18,10 @@ public class cliente {
         this.nome = nome;
         this.cpf = cpf;
     }
-    public cliente(){
+
+    public cliente() {
     }
-    
+
     public String getNome() {
         return nome;
     }
@@ -27,6 +29,5 @@ public class cliente {
     public String getCpf() {
         return cpf;
     }
-    
-    
+
 }
