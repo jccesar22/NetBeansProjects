@@ -19,7 +19,7 @@ public class MapaProgramacao1 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner teclado = new Scanner(System.in);
-        int op;
+        int op = 0;
         do {
             System.out.println("**************************************MAMU**************************************");
             System.out.println("1 - CADASTRO DE PRODUTOS\n"
@@ -39,4 +39,4 @@ public class MapaProgramacao1 {
         }
         while (op != 0);
 
-    }
+    }}
